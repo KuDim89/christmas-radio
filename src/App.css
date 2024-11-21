@@ -1,38 +1,58 @@
-.App {
-  text-align: center;
+.app {
+  width: 100vw;
+  height: 100vh;
+  background: transparent;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app:after, .app:before {
+  content: ' ';
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  z-index: -1;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.app:after {
+  top: 0;
+  left: 0;
+  background: linear-gradient(
+          to bottom,
+          #162739 0%,
+          #162739 18.25%,
+          #779E8D 18.25%,
+          #779E8D 18.99%,
+          #29414D 18.97%,
+          #29414D 20.65%,
+          #162739 20.40%,
+          #162739 86.40%,
+          #29414D 86.40%,
+          #29414D 91.20%,
+          #162739 91.20%,
+          #162739 100%
+  );
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.app:before {
+  top: 0;
+  right: 0;
+  background: linear-gradient(
+          to bottom,
+          #162739 0%,
+          #162739 18.12%,
+          #779E8D 18.12%,
+          #779E8D 18.80%,
+          #29414D 18.90%,
+          #29414D 20.43%,
+          #162739 20.43%,
+          #162739 86.20%,
+          #29414D 86.40%,
+          #29414D 91.20%,
+          #162739 91.20%,
+          #162739 100%
+  );
 }

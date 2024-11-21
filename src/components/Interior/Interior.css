@@ -1,0 +1,87 @@
+.interior-bg,
+.interior {
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100%;
+    z-index: 0;
+    position: relative;
+}
+
+.interior-bg {
+    background-image: url("../../assets/img/background.jpg");
+}
+
+.interior {
+    background-image: url("../../assets/img/interior.png");
+}
+
+.lights {
+    background-image: url("../../assets/img/lights-sprite.png");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center top;
+    z-index: 2;
+    position: absolute;
+    animation-duration: 1s;
+    animation-name: lights;
+    animation-iteration-count: infinite;
+    animation-timing-function: step-end;
+    animation-direction: normal;
+}
+
+.screen {
+    z-index: 4;
+    position: absolute;
+}
+
+@keyframes lights {
+    0% {
+        background-position-y: 0;
+    }
+
+    9.09% {
+        background-position-y: 9.05%;
+    }
+
+    18.8% {
+        background-position-y: 18.15%;
+    }
+
+    27.89% {
+        background-position-y: 27.25%;
+    }
+
+    36.98% {
+        background-position-y: 36.32%;
+    }
+
+    46.07% {
+        background-position-y: 45.43%;
+    }
+
+    55.16% {
+        background-position-y: 54.50%;
+    }
+
+    64.25% {
+        background-position-y: 63.60%;
+    }
+
+    73.49% {
+        background-position-y: 72.70%;
+    }
+
+    82.58% {
+        background-position-y: 81.75%;
+    }
+
+    91.67% {
+        background-position-y: 90.85%;
+    }
+
+    100% {
+        background-position-y: 99.36%;
+    }
+}
+

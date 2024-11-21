@@ -7883,6 +7883,11 @@ react-error-overlay@^6.0.11:
   resolved "https://registry.yarnpkg.com/react-error-overlay/-/react-error-overlay-6.0.11.tgz#92835de5841c5cf08ba00ddd2d677b6d17ff9adb"
   integrity sha512-/6UZ2qgEyH2aqzYZgQPxEnz33NJ2gNsnHA2o5+o4wW9bLM/JYQitNP9xPhsXwC08hMMovfGe/8retsdDsczPRg==
 
+react-fast-compare@^3.2.2:
+  version "3.2.2"
+  resolved "https://registry.yarnpkg.com/react-fast-compare/-/react-fast-compare-3.2.2.tgz#929a97a532304ce9fee4bcae44234f1ce2c21d49"
+  integrity sha512-nsO+KSNgo1SbJqJEYRE9ERzo7YtYbou/OqjSQKxV7jcKox7+usiUVZOAC+XnDOABXggQTno0Y1CpVnuWEc1boQ==
+
 react-is@^16.13.1:
   version "16.13.1"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
@@ -7957,6 +7962,13 @@ react-scripts@5.0.1:
     workbox-webpack-plugin "^6.4.1"
   optionalDependencies:
     fsevents "^2.3.2"
+
+react-snowfall@^2.1.1:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/react-snowfall/-/react-snowfall-2.1.1.tgz#0ad21415b3256af4522b7264b3ad61be5ba22c7d"
+  integrity sha512-29F2U+skZc8uYYYzVP2Ub4mbc5nPH+0jYr1yXDysaPCnHdl9nVUN3h/ygg6PYw2LH53q6ZQCNfj30kVliaPvBg==
+  dependencies:
+    react-fast-compare "^3.2.2"
 
 react@^18.3.1:
   version "18.3.1"
@@ -9279,6 +9291,11 @@ url-parse@^1.5.3:
   dependencies:
     querystringify "^2.1.1"
     requires-port "^1.0.0"
+
+use-change@^1.2.4:
+  version "1.2.4"
+  resolved "https://registry.yarnpkg.com/use-change/-/use-change-1.2.4.tgz#015597c438230d65a2ca63004c5db8b9ac6347d5"
+  integrity sha512-DhAUIa8b6ZrloLvkN+DAtHWPC3x47YWp+mWOSf0vRtv0HCRbffOIUfJVerHzR0VnJtzCNF3wYjSLU+KCEEKmqQ==
 
 util-deprecate@^1.0.1, util-deprecate@^1.0.2, util-deprecate@~1.0.1:
   version "1.0.2"
