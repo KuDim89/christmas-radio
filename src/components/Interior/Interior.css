@@ -1,0 +1,135 @@
+.interior-bg,
+.interior {
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100%;
+    z-index: 1;
+    position: relative;
+}
+
+.interior-bg {
+    background-image: url("../../assets/img/background.jpg");
+}
+
+.interior-bg:after, .interior-bg:before {
+    content: ' ';
+    position: absolute;
+    width: 50%;
+    height: 100%;
+}
+
+.interior-bg:after {
+    top: 0;
+    left: 0;
+    background: linear-gradient(
+            to bottom,
+            transparent  0%,
+            transparent  18.25%,
+            #779E8D 18.25%,
+            #779E8D 18.99%,
+            #29414D 18.97%,
+            #29414D 20.65%,
+            transparent 20.40%,
+            transparent 86.40%,
+            #29414D 86.40%,
+            #29414D 91.20%,
+            transparent 91.20%,
+            #162739 100%
+    );
+}
+
+.interior-bg:before {
+    top: 0;
+    right: 0;
+    z-index: 1;
+    background: linear-gradient(
+            to bottom,
+            transparent 0%,
+            transparent 18.12%,
+            #779E8D 18.12%,
+            #779E8D 18.80%,
+            #29414D 18.90%,
+            #29414D 20.43%,
+            transparent 20.43%,
+            transparent 86.20%,
+            #29414D 86.40%,
+            #29414D 91.20%,
+            transparent 91.20%,
+            transparent 100%
+    );
+}
+
+.interior {
+    background-image: url("../../assets/img/interior.png");
+}
+
+.lights {
+    background-image: url("../../assets/img/lights-sprite.png");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center top;
+    z-index: 3;
+    position: absolute;
+    animation-duration: 1s;
+    animation-name: lights;
+    animation-iteration-count: infinite;
+    animation-timing-function: step-end;
+    animation-direction: normal;
+}
+
+.monitor {
+    z-index: 4;
+    position: absolute;
+}
+
+@keyframes lights {
+    0% {
+        background-position-y: 0;
+    }
+
+    9.09% {
+        background-position-y: 9.05%;
+    }
+
+    18.8% {
+        background-position-y: 18.15%;
+    }
+
+    27.89% {
+        background-position-y: 27.25%;
+    }
+
+    36.98% {
+        background-position-y: 36.32%;
+    }
+
+    46.07% {
+        background-position-y: 45.43%;
+    }
+
+    55.16% {
+        background-position-y: 54.50%;
+    }
+
+    64.25% {
+        background-position-y: 63.60%;
+    }
+
+    73.49% {
+        background-position-y: 72.70%;
+    }
+
+    82.58% {
+        background-position-y: 81.80%;
+    }
+
+    91.67% {
+        background-position-y: 90.87%;
+    }
+
+    100% {
+        background-position-y: 99.36%;
+    }
+}
+
