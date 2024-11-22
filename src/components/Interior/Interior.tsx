@@ -42,7 +42,7 @@ export const Interior: FC = () => {
       <Snowfall color="#ffffff" style={{background: 'transparent'}} snowflakeCount={700}/>
       <div className="interior">
         <div className="lights" ref={lightsElement}></div>
-        <div className="screen" ref={monitorElement}>
+        <div className="monitor" ref={monitorElement}>
           <Monitor />
         </div>
       </div>

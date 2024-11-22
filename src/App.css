@@ -1,58 +1,10 @@
 .app {
   width: 100vw;
   height: 100vh;
-  background: transparent;
+  background: #162739;
   position: relative;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   overflow: hidden;
-}
-
-.app:after, .app:before {
-  content: ' ';
-  position: absolute;
-  width: 50%;
-  height: 100%;
-  z-index: -1;
-}
-
-.app:after {
-  top: 0;
-  left: 0;
-  background: linear-gradient(
-          to bottom,
-          #162739 0%,
-          #162739 18.25%,
-          #779E8D 18.25%,
-          #779E8D 18.99%,
-          #29414D 18.97%,
-          #29414D 20.65%,
-          #162739 20.40%,
-          #162739 86.40%,
-          #29414D 86.40%,
-          #29414D 91.20%,
-          #162739 91.20%,
-          #162739 100%
-  );
-}
-
-.app:before {
-  top: 0;
-  right: 0;
-  background: linear-gradient(
-          to bottom,
-          #162739 0%,
-          #162739 18.12%,
-          #779E8D 18.12%,
-          #779E8D 18.80%,
-          #29414D 18.90%,
-          #29414D 20.43%,
-          #162739 20.43%,
-          #162739 86.20%,
-          #29414D 86.40%,
-          #29414D 91.20%,
-          #162739 91.20%,
-          #162739 100%
-  );
 }

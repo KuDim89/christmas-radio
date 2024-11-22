@@ -1,4 +1,4 @@
-import React, { FC, useRef, useState, MouseEvent  } from 'react';
+import React, { FC, useRef, useState } from 'react';
 import playImg from '../../assets/img/play.svg';
 import pauseImg from '../../assets/img/pause.svg';
 import './Monitor.css';
@@ -29,7 +29,7 @@ export const Monitor: FC = () => {
           ref={defaultPlayer}
           muted={pause}
         >
-          <source src="https://22283.live.streamtheworld.com/PRAMBORS_FM.mp3?dist=onlineradiobox"/>
+          <source src="https://avengaradio.com/listen/avenga_radio/radio.mp3"/>
         </audio>
       </figure>
     </div>

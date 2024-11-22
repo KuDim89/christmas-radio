@@ -4,12 +4,60 @@
     background-repeat: no-repeat;
     background-position: center center;
     height: 100%;
-    z-index: 0;
+    z-index: 1;
     position: relative;
 }
 
 .interior-bg {
     background-image: url("../../assets/img/background.jpg");
+}
+
+.interior-bg:after, .interior-bg:before {
+    content: ' ';
+    position: absolute;
+    width: 50%;
+    height: 100%;
+}
+
+.interior-bg:after {
+    top: 0;
+    left: 0;
+    background: linear-gradient(
+            to bottom,
+            transparent  0%,
+            transparent  18.25%,
+            #779E8D 18.25%,
+            #779E8D 18.99%,
+            #29414D 18.97%,
+            #29414D 20.65%,
+            transparent 20.40%,
+            transparent 86.40%,
+            #29414D 86.40%,
+            #29414D 91.20%,
+            transparent 91.20%,
+            #162739 100%
+    );
+}
+
+.interior-bg:before {
+    top: 0;
+    right: 0;
+    z-index: 1;
+    background: linear-gradient(
+            to bottom,
+            transparent 0%,
+            transparent 18.12%,
+            #779E8D 18.12%,
+            #779E8D 18.80%,
+            #29414D 18.90%,
+            #29414D 20.43%,
+            transparent 20.43%,
+            transparent 86.20%,
+            #29414D 86.40%,
+            #29414D 91.20%,
+            transparent 91.20%,
+            transparent 100%
+    );
 }
 
 .interior {
@@ -21,7 +69,7 @@
     background-size: 100% auto;
     background-repeat: no-repeat;
     background-position: center top;
-    z-index: 2;
+    z-index: 3;
     position: absolute;
     animation-duration: 1s;
     animation-name: lights;
@@ -30,7 +78,7 @@
     animation-direction: normal;
 }
 
-.screen {
+.monitor {
     z-index: 4;
     position: absolute;
 }
@@ -73,11 +121,11 @@
     }
 
     82.58% {
-        background-position-y: 81.75%;
+        background-position-y: 81.80%;
     }
 
     91.67% {
-        background-position-y: 90.85%;
+        background-position-y: 90.87%;
     }
 
     100% {
