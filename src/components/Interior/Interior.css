@@ -83,6 +83,59 @@
     position: absolute;
 }
 
+@media (max-width: 480px) {
+    .interior-bg,
+    .interior {
+        background-size: cover;
+    }
+
+    .interior-bg:after {
+        width: 30px;
+        bottom: 0;
+        left: 0;
+        background: linear-gradient(
+                to top,
+                #29414D 0%,
+                #29414D 25.50%,
+                transparent 24.50%,
+                transparent 100%
+        );
+    }
+
+    .interior-bg:before {
+        top: 0;
+        right: 0;
+        background: linear-gradient(
+                to right,
+                transparent 0%,
+                transparent 18.97%,
+                #29414D 18.97%,
+                #29414D 22.90%,
+                #779E8D 22.90%,
+                #779E8D 24.50%,
+                transparent 24.50%,
+                transparent 100%
+        );
+    }
+
+    .interior {
+        background-image: url("../../assets/img/interior-mobile.png");
+        background-size: contain;
+    }
+
+    .monitor {
+        width: 74.3% !important;
+        height: 19% !important;
+        top: 39.1% !important;
+        left: 12.5% !important;
+    }
+
+    .lights {
+        left: -330.19px!important;
+    }
+
+}
+
 @keyframes lights {
     0% {
         background-position-y: 0;

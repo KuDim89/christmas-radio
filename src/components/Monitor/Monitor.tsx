@@ -29,7 +29,7 @@ export const Monitor: FC = () => {
           ref={defaultPlayer}
           muted={pause}
         >
-          <source src="https://avengaradio.com/listen/avenga_radio/radio.mp3"/>
+          <source src="https://radioavenga.online/listen/avenga_radio/radio.mp3"/>
         </audio>
       </figure>
     </div>
