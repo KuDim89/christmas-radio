@@ -83,6 +83,15 @@
     position: absolute;
 }
 
+@media (max-width: 768px) {
+    .monitor {
+        width: 33.3% !important;
+        height: 19% !important;
+        top: 30.60% !important;
+        left: 20.50% !important;
+    }
+}
+
 @media (max-width: 480px) {
     .interior-bg,
     .interior {
